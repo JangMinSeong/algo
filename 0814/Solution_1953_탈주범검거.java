@@ -21,7 +21,7 @@ class pair {
 	}
 }
 
-public class Solution_1953_Å»ÁÖ¹ü°Ë°Å {
+public class Solution_1953_Å»Ö¹Ë° {
 	static int [][][] d = { 
 							{{1,0},{0,1},{-1,0},{0,-1}},  //1
 							{{1,0},{-1,0}},  //2
@@ -79,7 +79,7 @@ public class Solution_1953_Å»ÁÖ¹ü°Ë°Å {
 		que = new LinkedList<>();
 		visited[r][c] = 1;
 		que.add(new pair(r,c));
-		//System.out.println("Â¥ÀÜ~~~~");
+		//System.out.println("Â¥~~~~");
 		if(time == 1) {
 			que.poll();
 			count = 1;
@@ -106,10 +106,10 @@ public class Solution_1953_Å»ÁÖ¹ü°Ë°Å {
 		}
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
-				System.out.print(visited[i][j] + " ");
+				//System.out.print(visited[i][j] + " ");
 				if(visited[i][j] != 0) count++;
 			}
-			System.out.println();
+			//System.out.println();
 		}
 	}
 }

@@ -36,8 +36,8 @@ int main() {
 		int sum = ab[front] + cd[rear];
 		if (sum == 0) {
 			int cntF = 0, cntR = 0;
-			while (front < ab.size() && ab[front] == ab[front + cntF]) cntF++;
-			while (rear >= 0 && cd[rear] == cd[rear - cntR]) cntR++;
+			while (front + cntF < ab.size() && ab[front] == ab[front + cntF]) cntF++;
+			while (rear - cntR >= 0 && cd[rear] == cd[rear - cntR]) cntR++;
 
 			ans += (long long) cntF * cntR;
 			front += cntF;
